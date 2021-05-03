@@ -18,7 +18,145 @@
 </head>
 
 <body>
-  ― Hello World! &#x1F609;
+  <main class="container">
+    <div class="navbar">
+      <img src="assets/img/logo.png" class="navbar_logo" alt="logotype">
+      <nav class="navbar__nav">
+        <ul id="menu">
+          <li><a href="#reas">Reasons to Leart</a></li>
+          <li><a href="#where">Where?</a></li>
+          <li><a href="#reas_link">Real Reasons</a></li>
+          <li><a href="#form">Help me!</a></li>
+        </ul>
+      </nav>
+      <img src="assets/img/mob_menu.png" class="menu-icon" onclick="opMenu()" alt="menu button">
+    </div>
+
+    <div class="front-page">
+      <div class="front-page__col-1">
+        <h2>Why Math<br>is so important</h2>
+        <h3>Your math teacher would be delighted</h3>
+        <p>(Actually no.)</p>
+        <h4>(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup></h4>
+        <a class="front-page__col-1__main_but" href="#form">Write a reason</a>
+      </div>
+      <div class="front-page__col-2">
+        <img src="assets/img/main.png" class="front-page__col-2__photo" alt="math photo My Math">
+        <div class="front-page__col-2__color-box"></div>
+      </div>
+    </div>
+    <div class="block-container-title" id="reas">
+      <p>
+        Reasons to Learn
+      </p>
+    </div>
+    <div class="block-container">
+      <div class="block-container__card">
+        <div class="card-text_underline under_size1">
+          <h2>Change in the store</h2>
+        </div>
+        <div class="cards-line"></div>
+        <p>You will be able to correctly calculate the change in the store. A penny to a penny and there will be
+          beer.</p>
+        <img src="assets/img/cards_beer.png" alt="beer photo" class="cards__img block-container__card-beer">
+      </div>
+      <div class="block-container__card">
+        <div class="card-text_underline under_size2">
+          <h2>Brag in front of friends</h2>
+        </div>
+        <div class="cards-line"></div>
+        <p>Show your friends that you are a really cool dude. Tell them about the interesting formulas of Euler
+          or Newton's bean, they will be delighted!</p>
+        <p class="card-text__phrase">"Math? You're giving me math?"</p>
+        <img src="assets/img/cards_friends.jpg" alt="friends joke" class="cards__img  block-container__card-friends">
+      </div>
+      <div class="block-container__card">
+        <div class="card-text_underline under_size3">
+          <h2>To be a favorite of a math teacher</h2>
+        </div>
+        <div class="cards-line"></div>
+        <p>Everyone loves a math teacher! But she chooses only the chosen ones. So be this chosen one, and stand
+          up for your class!</p>
+        <img src="assets/img/cards_jimmy.png" alt="Jimmy Neutron photo" class="cards__img  block-container__card-jimmy">
+      </div>
+    </div>
+
+    <div class="info-container" id="where">
+      <div class="info-container__card">
+        <div class="card-text_underline under_size4 underline_center">
+          <h2>Where you can learn math</h2>
+        </div>
+
+        <div class="where-cards-line"></div>
+        <div class="info-container__card--cut">
+          <div class="info-container__card__text">
+            <p>**USELESS TEXT**<br>In mathematics, the Pythagorean theorem, or Pythagoras's theorem, is a
+              fundamental relation in Euclidean geometry among the three sides of a right triangle. It
+              states that the area of the square whose side is the hypotenuse (the side opposite the right
+              angle) is equal to the sum of the areas of the squares on the other two sides. This theorem
+              can be written as an equation relating the lengths of the sides a, b and c, often called the
+              Pythagorean equation.</p>
+          </div>
+          <div class="info-container__card__img">
+            <img src="assets/img/books.png" alt="book photo" class="where-math-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="paper-font">
+      <div class="concluson" id="reas_link">
+        <div class="concluson__col-1">
+          <div class="concluson__col-1__color-box">
+            <div class="concluson__col-1__text-line">
+              <h2 class="conclusion-text h2_conc">Real Reasons</h2>
+            </div>
+            <p class="conclusion-text">I'm not a math hater. I know it quite well, and passed the ZNO exam
+              best of all my friends. This is so you don't think I'm a fool :). In fact, there are many
+              topics that are really interesting, for example. You knew that any number you choose is
+              closer to 0 than to infinity, because it can be multiplied by 2. Any number.
+              Or the <a href="https://www.youtube.com/watch?v=ovJcsL7vyrk&ab_channel=Veritasium">
+                equation</a> by which everything works in the wild nature? Mathematics is really a
+              necessary science, I, as a student of computer engineering, meet it everywhere. And it is
+              needed everywhere. I do not know what else to write, so lorem...) Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit. Maiores nobis vitae rem et voluptas itaque nihil ea
+              sapiente commodi totam? Id neque veniam modi vitae quis debitis, corporis excepturi illo!
+            </p>
+          </div>
+        </div>
+        <div class="block-img">
+          <img src="assets/img/real_res_teacher.png" alt="teacher photo" class="con__img">
+        </div>
+      </div>
+      <div class="form-container" id="form">
+        <div class="block-img">
+          <img src="assets/img/form_newton.png" alt="newton photo" class="con__img">
+        </div>
+        <div class="form-container__col-1">
+          <div class="form-container__col-1__color-box">
+            <form class="form">
+              <h2 class="form-main-label h2_conc">Write me if you found out new reasons to learn Math</h2>
+              <label for="name">Your name:</label>
+              <input type="text" id="name" class="form_input" placeholder="Eugene">
+
+              <label for="email">Enter an email:</label>
+              <input type="email" id="email" class="form_input" placeholder="email@">
+
+              <label for="reason">Your reason:</label>
+              <textarea id="reason" rows="5" class="form_input">Click on Send button below!</textarea>
+
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO" class="form_btn">Send!</a>
+            </form>
+            <img src="assets/img/form_writting.png" alt="boy writing" class="block-img">
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100012608142281"><img src="assets/img/cont_fb.png"
+            alt="facebook"></a>
+        <a href="https://www.instagram.com/eucheremisin/?hl=en"><img src="assets/img/cont_ig.png" alt="instagram"></a>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
